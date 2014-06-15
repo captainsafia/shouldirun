@@ -1,0 +1,69 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+body {
+    margin: 0;
+    background: #90C5E9;
+    font-family: 'Open Sans', sans-serif;
+}
+
+form > input[type="submit"] {
+    background: none !important;
+    border: none;
+    padding: 0 !important;
+    margin: 0 !important; 
+    display: inline;
+    font: inherit;
+    outline: none; 
+}
+
+form > input[type="text"] {
+    background: none! important;
+    border: none;
+    padding: 0 !important;
+    margin: 0 !important; 
+    border-bottom: #000 1px solid;
+    font: inherit;
+}
+
+form > input[type="text"]:focus {
+    outline: 0;
+}
+
+form > input#arrive {
+    width: 180px;
+}
+
+
+@media screen and (min-width: 615px) {
+    div.main {
+        padding: 15px;
+        font-size: 2.5em;
+        width: 600px;
+        height: 300px;
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        margin: -150px 0 0 -300px;
+    }
+    form > input#to {
+        width: 600px;
+        font-size: 0.58em;
+    }
+}
+
+@media screen and (max-width: 615px) {
+    div.main {
+        padding: 15px;
+        font-size: 2.5em;
+        width: 300px;
+        height: 300px;
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        margin: -150px 0 0 -200px;
+    }
+    form > input#to {
+        width: 300px;
+        font-size: 0.3em;
+    }
+}
