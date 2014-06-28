@@ -35,12 +35,14 @@ form > input#arrive {
 
 button {
     border: 0;
-    margin: 20px;
-    padding: 15px;
-    font-size: 1.25em;
+    margin: 30px;
+    padding: 5px; 
+    font-size: 1.07em !important;
     text-align: center;
     background: #2980b9;
     color: white;
+    display: inline;
+    font-size: 1.0em; 
 }
 
 button:active {
