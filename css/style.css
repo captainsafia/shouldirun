@@ -49,6 +49,10 @@ button:active {
     background: #2988C6;
 }
 
+button:disabled {
+    background: gray; 
+}
+
 @media screen and (min-width: 615px) {
     div.main {
         padding: 15px;

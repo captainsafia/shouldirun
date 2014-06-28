@@ -23,7 +23,7 @@ var getFrom = function() {
 * into the to variable. Returns a deferred object used later in the script.js
 */
 var getTo = function(destination) {
-  var data = {address: destination};
+  var data = {"address": destination};
   var deferred = new $.Deferred();
   geocoder.geocode(data, function(response, status) {
     if (status == google.maps.GeocoderStatus.OK) {
@@ -32,7 +32,8 @@ var getTo = function(destination) {
       to = new google.maps.LatLng(latitude, longitude);
       deferred.resolve();
     } else {
-      console.log("Geocoder Error: " + status);
+      alert("There was an error while geocoding the destination address because: " + 
+            status);
       deferred.reject();
     }
   });
