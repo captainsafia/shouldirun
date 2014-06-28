@@ -6,16 +6,16 @@ var from, to = null;
 * a deferred object used later in the script.js
 */
 var getFrom = function() {
-    var deferred = new $.Deferred();
-    navigator.geolocation.getCurrentPosition(function(position) {
-      var coordinates = position.coords;
-      from = new google.maps.LatLng(coordinates.latitude, coordinates.longitude);
-      deferred.resolve();
-    }, function(error) {
-      console.log("Error (" + error.code + ") " + error.message);
-    });
-    return deferred.promise();
-  }
+  var deferred = new $.Deferred();
+  navigator.geolocation.getCurrentPosition(function(position) {
+    var coordinates = position.coords;
+    from = new google.maps.LatLng(coordinates.latitude, coordinates.longitude);
+    deferred.resolve();
+  }, function(error) {
+    console.log("Error (" + error.code + ") " + error.message);
+  });
+  return deferred.promise();
+}
 
 /*
 * Given a string containing the address of the location, use the Google Maps 

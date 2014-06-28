@@ -17,8 +17,7 @@ var extractValues = function() {
 $(document).ready(function() {
   initializePlacesAutocomplete();
   $("#arrive").val(new Date().getPrettyTime());
-  $(this).keyup(function(event) {
-    if (event.keyCode == '13') {
+  $("#submit").click(function(event) {
       var values = extractValues();
       var destination = values.destination;
       var arrival = getArrivalTime(values.arrival);
@@ -32,7 +31,6 @@ $(document).ready(function() {
           } 
         });
       });
-    }
   });
 });
 

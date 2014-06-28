@@ -33,6 +33,19 @@ form > input#arrive {
     width: 180px;
 }
 
+button {
+    border: 0;
+    margin: 20px;
+    padding: 15px;
+    font-size: 1.25em;
+    text-align: center;
+    background: #2980b9;
+    color: white;
+}
+
+button:active {
+    background: #2988C6;
+}
 
 @media screen and (min-width: 615px) {
     div.main {
